@@ -1,0 +1,112 @@
+:root {
+    --transparencia-de-la-novia-de-darkus-suave: 0.2;
+    --transparencia-de-la-novia-de-darkus-media: 0.35;
+    --transparencia-de-la-novia-de-darkus-fuerte: 0.55;
+    --transparencia-de-la-novia-de-darkus-texto: 0.85;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: system-ui, sans-serif;
+}
+
+body {
+    background-image: url("https://img.freepik.com/foto-gratis/horizonte-tokio-puente-rainbow-torre-tokio-tokio-japon_335224-23.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notes-app {
+    background: transparent;
+    width: 360px;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, var(--transparencia-de-la-novia-de-darkus-fuerte));
+    border: 1px solid rgba(255, 255, 255, var(--transparencia-de-la-novia-de-darkus-suave));
+}
+
+.notes-app h2 {
+    margin: 0 0 15px;
+    text-align: center;
+    color: rgba(255, 255, 255, var(--transparencia-de-la-novia-de-darkus-texto));
+}
+
+textarea {
+    width: 100%;
+    height: 90px;
+    resize: none;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, var(--transparencia-de-la-novia-de-darkus-media));
+    outline: none;
+    font-size: 14px;
+    background: rgba(255, 255, 255, var(--transparencia-de-la-novia-de-darkus-suave));
+    color: white;
+}
+
+textarea::placeholder {
+    color: rgba(255, 255, 255, var(--transparencia-de-la-novia-de-darkus-texto));
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.counter {
+    font-size: 12px;
+    color: rgba(255, 255, 255, var(--transparencia-de-la-novia-de-darkus-texto));
+}
+
+button {
+    background: rgba(255, 255, 255, var(--transparencia-de-la-novia-de-darkus-suave));
+    color: white;
+    border: 1px solid rgba(255, 255, 255, var(--transparencia-de-la-novia-de-darkus-media));
+    padding: 8px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 13px;
+    backdrop-filter: blur(4px);
+}
+
+button:hover {
+    background: rgba(255, 255, 255, var(--transparencia-de-la-novia-de-darkus-media));
+}
+
+.notes-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.notes-list li {
+    background: rgba(255, 255, 255, var(--transparencia-de-la-novia-de-darkus-suave));
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notes-list p {
+    margin: 0;
+    font-size: 13px;
+    color: white;
+}
+
+.delete {
+    background: rgba(255, 92, 92, var(--transparencia-de-la-novia-de-darkus-media));
+    border: 1px solid rgba(255, 92, 92, var(--transparencia-de-la-novia-de-darkus-fuerte));
+    padding: 4px 8px;
+    border-radius: 50%;
+    font-size: 12px;
+    color: white;
+}
