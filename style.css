@@ -30,7 +30,7 @@ body {
     border: 1px solid rgba(255, 255, 255, var(--transparencia-de-la-novia-de-darkus-suave));
 }
 
-.notes-app h2 {
+.notes-app h1 {
     margin: 0 0 15px;
     text-align: center;
     color: rgba(255, 255, 255, var(--transparencia-de-la-novia-de-darkus-texto));
